@@ -1,0 +1,58 @@
+$mainColor: #00a4b8;
+
+.text-main-color {
+  color: $mainColor;
+}
+.bg-main-color {
+  background-color: $mainColor;
+}
+
+.wave {
+  animation: move 2.5s ease infinite;
+}
+@keyframes move {
+  0%   {transform: translateY(-20px);}
+  50%  { transform: translateY(-5px) translateX(-5px);}
+  100% {transform: translateY(-20px);}
+}
+@media only screen and (max-width: 600px) {
+  .wave {
+    top: -200px;
+  }
+  .wrapper-wave2 {
+    transform: scale(0.8);
+  }
+  .tab-title-wrapper {
+    width: 80px !important;
+    height: 80px !important;
+    h1 {
+      font-size: 64px !important;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  .section2 {
+    height: 100vh;
+  }
+}
+
+@keyframes move2 {
+  0%   {transform: translateY(-5px);}
+  50%  { transform: translateY(10px) translateX(10px);}
+  100% {transform: translateY(-5px);}
+}
+.wave2 {
+  animation: move2 2.5s ease infinite;
+}
+
+.tab-title-wrapper {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 108px;
+    color: $mainColor;
+  }
+}
